@@ -36,8 +36,11 @@ Roboflow Universe for our Dataset (Image Format: Pascal VOC XML)
 # Reflection:
 We successfully were able to train a model with a dataset of 500+ images, with 40 Epochs and a batch size of 2. Our Webcamera was our vision system, and the Jetson Nano was able to detect our labels with the training. Once a label was detected, the codebase would trigger communication to Google Cloud, which would then send a notification/message via Gmail, viewed via Phone. 
 \
+\
 For instance: If a worker was detected not wearing a helmet, a message regarding this hazard was sent.
 \
+\
 We saw the versatility of this device, since current Safety Surveillance is often reliant upon human error — watchmen watching various cameras, or up to the supervision of upper-management faculty who can only see so much at once. Our vision for this project was that multiple Smart Monitors can be placed on site to be the "extra pair" of eyes. Once a hazard is detected, the manager can simply see the notification and proceed as necessary.
+\
 \
 Overall, this project was interesting and we learned quite a lot about AI/ML training and working with Edge Devices.
