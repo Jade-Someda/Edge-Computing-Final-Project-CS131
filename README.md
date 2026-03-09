@@ -30,7 +30,7 @@ RoboFlow Universide for our Dataset (Image Format: Pascal VOC XML)
 
 # Challenges
 * 5 year old SSD card lead to significant training-time taking twice as long as anticipated.
-* We had not trained a model before, so this slowed our process. (Organizing the correct direcories, choosing a good dataset, ensuring 1:1 ratio between XML/JPEG files, etc)
+* We had not trained a model before and had to learn quite a lot, so this slowed our process. (Organizing the correct direcories, choosing a good dataset, ensuring 1:1 ratio between XML/JPEG files, etc)
 *  Time Constraint: Completed this in 3 weeks.
 *  We planned to use Push-Notification/Event-Driven Messaging Pattern with Firebase(HTTPS), but we were unable to generate a token(used to communcate between the cloud and phone), so we switched to SMTP(ie. using gmail as the messaging protocal).
 
