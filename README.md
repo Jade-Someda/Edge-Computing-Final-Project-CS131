@@ -13,5 +13,12 @@ Google Cloud Service (Workspace - Gmail)
 
 Messaging Pattern - Event-Driven
 Communcation Protocal -  Simple Mail Transfer Protocol(SMTP)
-Jetson Inference - AI/Object Detection
-Detectnet - 
+Jetson Inference: Detectnet -  AI/Object Detection
+
+Training Model:
+Framework: Pytorch
+Convolutional Neural Network
+Activation Function -  ReLu
+Loss Function - SmoothL1/CrossEntropy
+
+
