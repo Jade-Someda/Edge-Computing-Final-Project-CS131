@@ -1,45 +1,40 @@
 # Final-Project-Edge-Computing-CS131
 # Developers: Jade Someda and Tanya Carillo
-
-This final project is an implementation of a Smart Monitoring System for Industrial Sites.\
-In the case a hazard is detected a message will be sent from the Jetson Nano to Gmail, via Cloud Messaging Services.
+This final project is an implementation of a Smart Monitoring System for Industrial Sites.
+In the case a hazard is detected, a message will be sent from the Jetson Nano to Gmail via Cloud Messaging Services.
 
 ## Architecture & Design/Implementation:
 Jetson Nano Developer\
 Web-Camera\
 Phone (iOS/Android)\
-USB-A to USB-C converter\
+USB-A to USB-C Converter\
 Google Cloud Service (Workspace - Gmail)\
-
 Messaging Pattern - Event-Driven\
-Communcation Protocal -  Simple Mail Transfer Protocol(SMTP)\
-Jetson Inference: Detectnet -  AI/Object Detection\
-SwapSpace - Virtualize memory to have more space to store Ephochs. 
+Communication Protocol - Simple Mail Transfer Protocol (SMTP)\
+Jetson Inference: DetectNet - AI/Object Detection\
+Swap Space - Virtualize memory to have more space to store Epochs.
 
 ## Training Model:
-Framework: Pytorch\
+Framework: PyTorch\
 Architecture: SSD (Single Shot Detector)\
-Neural Network: Convolutional Neural Network(CNN)\
-Activation Function -  ReLu/ReLu6\
+Neural Network: Convolutional Neural Network (CNN)\
+Activation Function - ReLU/ReLU6\
 Loss Function - SmoothL1/CrossEntropy\
-Backbone: modelsVGG/MobileNet/ SqueezeNet\
-Optimizer: SGD\
+Backbone: VGG/MobileNet/SqueezeNet\
+Optimizer: SGD
 
 # Resources:
-RoboFlow Universide for our Dataset (Image Format: Pascal VOC XML)
+Roboflow Universe for our Dataset (Image Format: Pascal VOC XML)
 
 # Challenges
-* 5 year old SSD card lead to significant training-time taking twice as long as anticipated.
-* We had not trained a model before and had to learn quite a lot, so this slowed our process. (Organizing the correct direcories, choosing a good dataset, ensuring 1:1 ratio between XML/JPEG files, etc)
-*  Time Constraint: Completed this in 3 weeks.
-*  We planned to use Push-Notification/Event-Driven Messaging Pattern with Firebase(HTTPS), but we were unable to generate a token(used to communcate between the cloud and phone), so we switched to SMTP(ie. using gmail as the messaging protocal).
+* 5-year-old SD card led to significant training time, taking twice as long as anticipated.
+* We had not trained a model before and had to learn quite a lot, which slowed our process. (Organizing the correct directories, choosing a good dataset, ensuring 1:1 ratio between XML/JPEG files, etc.)
+* Time Constraint: Completed this in 3 weeks.
+* We planned to use Push-Notification/Event-Driven Messaging Pattern with Firebase (HTTPS), but we were unable to generate a token (used to communicate between the cloud and phone), so we switched to SMTP (i.e. using Gmail as the messaging protocol).
+* We were running low on RAM and Disk Space. Our Disk Space was so low that the Edge Device's ability to keep track of time was off, and our CPU was so overloaded/RAM extremely low that our mouse stopped being able to click icons on the screen. We had to delete unnecessary files to resolve the Disk Space issue, and we virtualized RAM memory by using Swap Space to resolve the low RAM.
 
-
- # Reflection: 
- We succesfully were able to train a model with a dataset of 500+ images, with 40 Ephocs and batch size of 2. Our Webcamera was our vision system, and the Jetson Nano was able to detect our labels with the training. And once a label was detected the codebase, would then trigger to communcate to Google Cloud which would then send a notification/message via Gmail which was viewed via Phone.\
-
-For instance: If a worker was detected not wearing a helmet, then a message regarding this hazard was sent.\
-
-We saw the versatility of this device, since current Safety Survelliance is often reliant upon human error. Watchman watching various camera's or up to the sueprvision of upper-management faculty who can only see so much at once. Our vision for this project was that multiple Smart Montiers can be placed on site, and be the 'extra-pair' of eyes. Once a hazard is dected the manager can simply see the notification and proceed as neccesary.\
-
-Overall this project intersting and we learned quite a lot about AI/ML training and in working with Edge Devices. 
+# Reflection:
+We successfully were able to train a model with a dataset of 500+ images, with 40 Epochs and a batch size of 2. Our Webcamera was our vision system, and the Jetson Nano was able to detect our labels with the training. Once a label was detected, the codebase would trigger communication to Google Cloud, which would then send a notification/message via Gmail, viewed via Phone.\
+For instance: If a worker was detected not wearing a helmet, a message regarding this hazard was sent.\
+We saw the versatility of this device, since current Safety Surveillance is often reliant upon human error — watchmen watching various cameras, or up to the supervision of upper-management faculty who can only see so much at once. Our vision for this project was that multiple Smart Monitors can be placed on site to be the "extra pair" of eyes. Once a hazard is detected, the manager can simply see the notification and proceed as necessary.\
+Overall, this project was interesting and we learned quite a lot about AI/ML training and working with Edge Devices.
