@@ -21,9 +21,6 @@ build/
 data/networks/
 data/imagenet/
 data/openimages/
-*.jpg
-*.jpeg
-*.png
 *.mp4
 *.avi
 
