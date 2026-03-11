@@ -1,0 +1,42 @@
+# Model weight files (too large for GitHub)
+*.pth
+*.onnx
+*.engine
+*.uff
+*.plan
+
+# Sha files
+*.sha256sum
+
+# TensorBoard logs
+tensorboard/
+
+# Compiled/build files
+build/
+*.so
+*.o
+*.a
+
+# Data folders (datasets, images, videos)
+data/networks/
+data/imagenet/
+data/openimages/
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+
+# Firebase credentials (sensitive!)
+*.json
