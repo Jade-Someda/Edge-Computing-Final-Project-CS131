@@ -4,6 +4,12 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import time
+#This is the trigger file: 
+# The “trigger” file refers to the file that communicates with the jetson-nano and the cloud. 
+# This file sources the training model, feeds it into detectnet/jetson-inference 
+# which assesses the live visual feedback that's being received from the camera. 
+# If a hazard(a label) is detected then the jetson-nano communicates 
+# to the cloud to then send a specific message/gmail to the user.  
 
 # Email setup
 SENDER_EMAIL = "sailorgalaxay9@gmail.com"  # REPLACE with your Gmail
