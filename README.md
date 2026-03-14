@@ -75,16 +75,8 @@ Link to the video demo: https://youtu.be/mRhUXtfdJh4
 <img src="images/worker_jacker_machine.png" alt="Jacket Detection" width="50%">
 
 ## Alert Notification
-<img src="images/list_of_emails.jpg" alt="Email List Alert" width="50%">
-<img src="images/helmet_email.jpg" alt="Helmet Email Alert" width="50%">
-<img src="images/jacket_email.jpg" alt="Jacket Email Alert" width="50%">
+<img src="images/list_of_emails.jpg" alt="Email List Alert" width="55%">
+<img src="images/helmet_email.jpg" alt="Helmet Email Alert" width="55%">
+<img src="images/jacket_email.jpg" alt="Jacket Email Alert" width="55%">
 
 
-![Two Workers Detection](images/twoWorkers.png)
-![Helmet Detection](images/worker_helmet_machine.png)
-![Jacket Detection](images/worker_jacker_machine.png)
-
-## Alert Notification
-![Email List Alert](images/list_of_emails.jpg)
-![Helmet Email Alert](images/helmet_email.jpg)
-![Jacket Email Alert](images/jacket_email.jpg)
