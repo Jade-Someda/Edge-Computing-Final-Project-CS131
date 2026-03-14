@@ -67,4 +67,4 @@ Overall, this project was interesting and we learned quite a lot about AI/ML tra
 
 # Demo
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+Link to the video demo: https://youtu.be/mRhUXtfdJh4 
