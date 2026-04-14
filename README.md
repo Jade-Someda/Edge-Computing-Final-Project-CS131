@@ -53,7 +53,7 @@ Roboflow Universe for our Dataset (Image Format: Pascal VOC XML)
 12)  Done!
 
   
-# Reflection:
+# Reflection/Improvements:
 We successfully were able to train a model with a dataset of 500+ images, with 40 Epochs and a batch size of 2. Our Webcamera was our vision system, and the Jetson Nano was able to detect our labels with the training. Once a label was detected, the codebase would trigger communication to Google Cloud, which would then send a notification/message using Gmail and the message was viewd on a phone. 
 \
 \
