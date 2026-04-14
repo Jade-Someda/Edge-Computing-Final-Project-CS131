@@ -64,6 +64,9 @@ We saw the versatility of this device, since current Safety Surveillance is ofte
 \
 \
 Overall, this project was interesting and we learned quite a lot about AI/ML training and working with Edge Devices.
+\
+\
+As for future imprpovements, we can train the model longer in order to have a higher confidence rating for object detection, divsesify and increase the size of the dataset, and implement push notifications.  
 
 # Demo
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
